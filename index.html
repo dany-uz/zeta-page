@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,9 +67,26 @@
                   </li>
               </ul>
           </div>
-      </div>
+        </div>
       </nav>
     </header>
+
+    <!--SUBNAVBAR-->
+    <div class="container-md d-flex align-items-md-center" style="background-color: #3e5f8a;">
+      <form class="bd-search position-relative me-auto">
+        <input type="search" placeholder="Buscar...">
+      </form>
+
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#menu-aside"
+              data-bs-controls="menu-aside"
+              aria-expanded="false"
+              aria-label="Toogle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
     <!--PAGINA-->
     <div class="container-md" style="background-color: #a0c5f7; padding-top: 10px;">
@@ -127,9 +144,9 @@
   
           <div class="col-4">
           <!--ASIDE-->
-          <div class="container-xxl">
-            <aside class="bd-sidebar">
-              <nav class="bd-links collapse show" id="menu-aside" aria-label="Docs navigation">
+          <div class="container-xxl" >
+            <aside class="bd-sidebar" id="menu-aside">
+              <nav class="bd-links collapse show" aria-label="Docs navigation">
                   <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                   <span class="fs-5 fw-semibold">Menú</span>
                 <ul class="list-unstyled ps-0">
@@ -194,7 +211,6 @@
         </div>
       </div>
             
-      
             
 
 
