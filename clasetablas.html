@@ -1,65 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .table {
-            margin-bottom: 50px;
-        }
-
-        table {
-            width: 100%;
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        th {
-            width: 33%;
-            border: 1px solid black;
-            background-color: #3e5f8a;
-        }
-
-        td {
-            width: 33%;
-            border: 1px solid black;
-            background-color: #cadffb;
-        }
-    </style>
+    <link rel="stylesheet" href="css/clasetablas.css">
 </head>
 <body>
     <div class="table">
         <table>
-            <caption>Tabla de Información</caption>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <th colspan="5">Datos Personales</th>
+            </tr>
+            <tr id="tipodatos">
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Documento</td>
+                <td>Edad</td>
+                <td>Cargo</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>12345</td>
+                <td>23</td>
+                <td>Apoyo Administrativo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Lopez</td>
+                <td>23456</td>
+                <td>23</td>
+                <td>Auxiliar</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Martinez</td>
+                <td>34567</td>
+                <td>42</td>
+                <td>Auxiliar</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Salcedo</td>
+                <td>45678</td>
+                <td>31</td>
+                <td>Gerente</td>
+            </tr>
+            <tr>
+                <td>Andrea</td>
+                <td>Ruiz</td>
+                <td>56789</td>
+                <td>22</td>
+                <td>Secretaria</td>
+            </tr>
+            <tr>
+                <td>Patricia</td>
+                <td>Cardenas</td>
+                <td>67891</td>
+                <td>54</td>
+                <td>Coordinador de procesos</td>
+            </tr>
+            <tr>
+                <td colspan="5">Esta tabla corresponde a la información 
+                    correspondiente con la base de datos de la empresa.
+                </td>
             </tr>
         </table>
     </div>
 
     <div class="form">
-        <form action="">
-            <input type="search" placeholder="Buscar...">
-            <input type="text" placeholder="Usuario">
+        <form class="box" action="selectores.html" method="GET">
+            <h3>Para enviar los datos, llena el siguiente formulario:</h3>
+            <input type="text" placeholder="Nombre de Usuario">
             <input type="password" placeholder="Contraseña">
-            <input type="submit" title="Enviar">
+            <input type="submit" placeholder="Enviar">
         </form>
     </div>
 </body>

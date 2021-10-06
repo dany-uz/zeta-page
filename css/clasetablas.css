@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+#tipodatos {
+    background-color: lightgreen;
+}
+
+th {
+    border: 1px solid black;
+    background-color: green;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 2.5px;
+}
+
+form {
+    margin-top: 25px;
+}
