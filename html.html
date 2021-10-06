@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/sidebars.css">
     <script src="js\sidebars.js"></script>
-    <link rel="stylesheet" text="style/css" href="css/css.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body style="background-color: #cadffb;">
     <!--NAVBAR-->
@@ -71,24 +71,6 @@
       </nav>
     </header>
 
-    <!--SUBNAVBAR-->
-    <div class="container-md d-flex align-items-md-center" style="background-color: #3e5f8a;">
-      <form class="bd-search position-relative me-auto">
-        <input type="search" placeholder="Buscar...">
-      </form>
-
-      <button class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navegacion-header"
-              data-bs-controls="navegacion-header"
-              aria-expanded="false"
-              aria-label="Toogle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-
-
     <!--PAGINA-->
     <div class="container-md" style="background-color: #a0c5f7; padding-top: 10px;">
       <div class="container-md">
@@ -147,7 +129,7 @@
           <!--ASIDE-->
           <div class="container-xxl" >
             <aside class="bd-sidebar" id="menu-aside">
-              <nav class="collapse bd-links" aria-label="Docs navigation">
+              <nav class="bd-links collapse show" aria-label="Docs navigation">
                   <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                   <span class="fs-5 fw-semibold">Menú</span>
                 <ul class="list-unstyled ps-0">
@@ -162,7 +144,7 @@
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a href="#introduccion" class="link-dark rounded">Introducción a la Programación</a></li>
                         <li><a href="#historia" class="link-dark rounded">Historia de la Programación</a></li>
-                        <li><a href="#paquesirve" class="link-dark rounded">¿Para qué nos sirve?</a></li>
+                        <li><a href="#historia" class="link-dark rounded">¿Para qué nos sirve?</a></li>
                       </ul>
                     </div>
                   </li>
@@ -188,7 +170,6 @@
           <div class="col-8">
           <!--CONTENT-->
           <div class="container-xxl order-1">
-
             <h2 id="introduccion" class="text-center">Introducción a la Programación</h2>
             <br>
 
@@ -201,174 +182,11 @@
               </p>
             
               <p>
-                El HyperText Markup Language (Lenguaje de marcado de hipertexto), más conocido a día de hoy
-                como HTML, es el lenguaje de marcado predominante para la elaboración de páginas web. Es usado 
-                para describir la estructura y el contenido en forma de texto, así como para complementar el texto 
-                con objetos tales como imágenes.
+                El desarrollo de una aplicación web consta básicamente de un lenguaje de etiquetas construido 
+                por el HTML, un lenguaje de estilos construido por el CSS para representar los elementos 
+                del HTML y por un lenguaje de programación, JavaScript, que es el responsable del 
+                funcionamiento de la aplicación.
               </p>
-
-              <p>
-                El código HTML se escribe en forma de "etiquetas", mediante las cuales podemos describir la 
-                estructura lógica y apariencia del contenido. La apariencia que podemos describir con HTML 
-                está bastante limitada, pero el código se puede complementar y mejorar mediante el uso de 
-                otros lenguajes como <a href="javascript.html" style="text-decoration: none;">JavaScript</a>
-                 o <a href="css.html" style="text-decoration: none;">CSS</a>
-              </p>
-
-              <br>
-              <br>
-
-              <h2 id="historia" class="text-center">Historia de La Programación</h2>
-            <br>
-
-            <div class="clearfix">
-              <img src="img/historia.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-sm-3" alt="img-introduccion">
-            
-              <p>
-                En la década de 1940 fueron creadas las primeras computadoras modernas, con alimentación 
-                eléctrica. La velocidad y capacidad de memoria limitadas forzaron a los programadores a 
-                escribir programas, en lenguaje ensamblador muy afinados. Finalmente se dieron cuenta de 
-                que la programación en lenguaje ensamblador requería de un gran esfuerzo intelectual y era 
-                muy propensa a errores.
-              </p>
-
-              <p>
-                En 1948, Konrad Zuse publicó un artículo acerca de su lenguaje de programación Plankalkül. 
-                Sin embargo, no fue implementado en su vida y sus contribuciones fueron aisladas de otros 
-                desarrollos.
-              </p>
-
-              <p>
-                Entre algunos lenguajes importantes que fueron desarrollados en este período se encuentran:
-              </p>
-
-              <p>
-                <ul>
-                  <li>
-                    1943 - Plankalkül (Respetad a Konrad), diseñado, pero sin implementar durante medio siglo
-                  </li>
-                  <li>
-                    1943 - se crea el sistema de codificación ENIAC.
-                  </li>
-                  <li>
-                    1949 - 1954 -- una serie de conjuntos de instrucciones nemotécnicas, como la de ENIAC, 
-                    comenzando en 1949 con C-10 para BINAC (que luego evolucionaría en UNIVAC). Cada conjunto 
-                    de instrucciones estaba destinado a un fabricante específico
-                  </li>
-                </ul>
-              </p>
-
-              <br>
-              <br>
-
-              <h2 id="paquesirve" class="text-center">¿Para qué nos sirve?</h2>
-            <br>
-
-            <div class="clearfix">
-              <img src="img/paquesirve.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-sm-3" alt="img-introduccion">
-            
-              <p>
-                Prácticamente te sirve para todo. Es una respuesta tan ambigua como compleja. Programar 
-                te sirve para comunicarte con cualquier computadora, smartphone, tablet y dado que nos 
-                encontramos en un escenario en donde prácticamente estamos rodeados de ellos 24/7, programar 
-                se vuelve indispensable si te quieres dedicar a la tecnología, a la innovación o incluso 
-                a trabajar en cualquiera de las ramas a las que te dediques y desees construir tu propio 
-                sitio web. 
-              </p>                
-
-              <br>
-              <br>
-
-              <h2 id="historia" class="text-center">Historia de La Programación</h2>
-            <br>
-
-            <div class="clearfix">
-              <img src="img/historia.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-sm-3" alt="img-introduccion">
-            
-              <p>
-                En la década de 1940 fueron creadas las primeras computadoras modernas, con alimentación 
-                eléctrica. La velocidad y capacidad de memoria limitadas forzaron a los programadores a 
-                escribir programas, en lenguaje ensamblador muy afinados. Finalmente se dieron cuenta de 
-                que la programación en lenguaje ensamblador requería de un gran esfuerzo intelectual y era 
-                muy propensa a errores.
-              </p>
-
-              <p>
-                En 1948, Konrad Zuse publicó un artículo acerca de su lenguaje de programación Plankalkül. 
-                Sin embargo, no fue implementado en su vida y sus contribuciones fueron aisladas de otros 
-                desarrollos.
-              </p>
-
-              <p>
-                Entre algunos lenguajes importantes que fueron desarrollados en este período se encuentran:
-              </p>
-
-              <p>
-                <ul>
-                  <li>
-                    1943 - Plankalkül (Respetad a Konrad), diseñado, pero sin implementar durante medio siglo
-                  </li>
-                  <li>
-                    1943 - se crea el sistema de codificación ENIAC.
-                  </li>
-                  <li>
-                    1949 - 1954 -- una serie de conjuntos de instrucciones nemotécnicas, como la de ENIAC, 
-                    comenzando en 1949 con C-10 para BINAC (que luego evolucionaría en UNIVAC). Cada conjunto 
-                    de instrucciones estaba destinado a un fabricante específico
-                  </li>
-                </ul>
-              </p>
-
-              <br>
-              <br>
-
-              <h2 id="editorestexto" class="text-center">Editores de texto</h2>
-            <br>
-
-            <div class="clearfix">
-              <img src="img/editores.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-sm-3" alt="img-introduccion">
-            
-              <p>
-                Un editor de código fuente es un editor de texto diseñado específicamente 
-                para editar el código fuente de programas informáticos. Puede ser una aplicación 
-                individual o estar incluido en un entorno de desarrollo integrado.
-              </p>     
-              
-              <p>
-                Los editores de código fuente tienen características diseñadas exclusivamente 
-                para simplificar y acelerar la escritura de código fuente, como resaltado de sintaxis, 
-                autocompletar y pareo de llaves. Estos editores también proveen un modo conveniente 
-                de ejecutar un compilador, un intérprete, un depurador, o cualquier otro programa 
-                que sea relevante en el proceso de desarrollo de software. 
-              </p>
-
-              <p>
-                Entre los editores de texto para programación existentes, mis recomendaciones son:
-                <ul>
-                  <li>Visual Studio Code</li>
-                  <li>Sublime Text</li>
-                  <li>Atom</li>
-                  <li>Brackets</li>
-                </ul>
-              </p>
-            </div>
-
-              <br>
-              <br>
-
-              <h2 id="lenguajes" class="text-center">Lenguajes de Programación</h2>
-            <br>
-
-            <div class="clearfix">
-              <img src="img/lenguajes.jpg" class="img-fluid col-sm-6 float-sm-end mb-3 ms-sm-3" alt="img-introduccion">
-            
-              <p>
-                Un lenguaje de programación es un lenguaje de computadora que 
-                los programadores utilizan para comunicarse y para desarrollar 
-                programas de software, aplicaciones, páginas webs, scripts u 
-                otros conjuntos de instrucciones para que sean ejecutadas por 
-                los ordenadores.
-              </p>     
             </div>
           </div>
           </div>
